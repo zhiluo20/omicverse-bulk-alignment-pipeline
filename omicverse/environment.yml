@@ -1,0 +1,26 @@
+name: omicverse-bulk
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  # Core bioinformatics tools
+  - sra-tools
+  - samtools
+  - star
+  - subread        # provides featureCounts
+  - fastp
+  - pigz           # optional gzip accelerator
+  - aria2          # optional download accelerator
+  # Python libs
+  - pandas
+  - numpy
+  - tqdm
+  - requests
+  - lxml
+  - biopython
+  - pip
+  - pip:
+      # add extra pip-only deps here if needed
+      -
